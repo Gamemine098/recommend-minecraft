@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "naumovs.color-highlight",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "ecmel.vscode-html-css"
+  ]
+}
