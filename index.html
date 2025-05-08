@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>na man</title>
+    <!-- link -->
     <link href="./css/output.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <link
@@ -11,9 +12,11 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="bg-gray-800 text-white">
     <!-- <img src="./pic/waves.svg" alt="" class="fixed -z-10 w-full" /> -->
     <div class="relative min-h-screen">
+      <!-- nav -->
       <nav class="top-0 left-0 w-full bg-white/30 shadow-md backdrop-blur-md">
         <div class="container mx-auto flex items-center justify-between p-4">
           <a href="#" class="text-2xl font-bold text-white drop-shadow-2xl"
@@ -42,6 +45,7 @@
         </div>
       </nav>
 
+      <!-- main -->
       <main class="mt-14 flex items-center justify-center">
         <div
           class="mb-20 rounded-3xl bg-white/15 py-20 drop-shadow-lg backdrop-blur-xl"
@@ -92,61 +96,16 @@
       </main>
     </div>
 
+    <!-- footer -->
     <footer
       class="bg-white/30 py-4 text-center text-sm text-gray-700 backdrop-blur-md"
     >
       <p>© 2025 All rights reserved.</p>
     </footer>
 
-    <script>
-      const audio = document.getElementById("audio");
-      const toggleButton = document.getElementById("toggleButton");
-
-      toggleButton.addEventListener("click", () => {
-        if (audio.paused) {
-          audio.play();
-          toggleButton.innerHTML = '<i class="fas fa-stop"></i>';
-        } else {
-          audio.pause();
-          audio.currentTime = 0; // Reset to the beginning
-          toggleButton.innerHTML = '<i class="fas fa-play"></i>';
-        }
-      });
-
-      // Ensure the icon resets to "play" when the audio ends (even with loop)
-      audio.addEventListener("ended", () => {
-        if (!audio.loop) {
-          toggleButton.innerHTML = '<i class="fas fa-play"></i>';
-        }
-      });
-    </script>
-    <script>
-      var texts = [
-        "lmao",
-        "I'm the honored one",
-        "Nah I'd win",
-        "Pi ja num ja tak",
-        "Mai hai tak",
-        "XD",
-        "我喜欢吃冰淇淋。",
-        "sussy baka",
-        "Nah I'd lose",
-        "那个",
-        "turi ip ip ip",
-        "tung tung tung sahur",
-        "a but ta com",
-        "Lorem ipsum",
-        "nah uh",
-      ];
-
-      document.getElementById("randomText1").value =
-        texts[Math.floor(Math.random() * texts.length)];
-    </script>
-    <script>
-      var texts = ["De kub", "Hello World!", "สวัสดีครับ"];
-
-      document.getElementById("randomText2").value =
-        texts[Math.floor(Math.random() * texts.length)];
-    </script>
+    <!-- js -->
+    <script src="./js/customaudiocontrol.js"></script>
+    <script src="./js/randomtext1.js"></script>
+    <script src="./js/randomtext2.js"></script>
   </body>
 </html>
