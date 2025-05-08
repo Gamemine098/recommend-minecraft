@@ -7,6 +7,524 @@
     <!-- link -->
     <link href="./css/output.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body class="bg-gray-800/40 text-white">
+    <div class="relative min-h-17/18">
+      <!-- nav -->
+      <nav class="top-0 left-0 w-full bg-white/30 shadow-md backdrop-blur-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="./index.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                href="./minecraft.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Minecraft
+              </a>
+            </li>
+            <li>
+              <p class="text-xl font-bold text-blue-700 text-shadow-md">
+                Minecraft Mob
+              </p>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center space-x-4">
+            <audio id="audio" src="./aud/minecraft.mp3" autoplay loop></audio>
+            <button id="toggleButton" class="custom-button flex items-center">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- mian -->
+      <main class="my-14 flex items-center justify-center">
+        <section class="container">
+          <div class="overflow-x-auto">
+            <table
+              class="w-full table-auto border-collapse overflow-hidden rounded-2xl border border-gray-700/30 drop-shadow-2xl backdrop-blur-lg"
+            >
+              <thead class="bg-gray-700/30 text-white">
+                <tr>
+                  <th class="border border-gray-600/30 px-4 py-2">Picture</th>
+                  <th class="border border-gray-600/30 px-4 py-2">Name</th>
+                  <th class="border border-gray-600/30 px-4 py-2">Behavior</th>
+                  <th class="border border-gray-600/30 px-4 py-2">
+                    Health Point
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/AllayFace.png?f466a"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Allay</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      20 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 10)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/ArmadilloFace.png?18991"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Armadillo</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      12 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 6)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/AxolotlFace.png?2060f"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Axolotl</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      14 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 7)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/BatFace.png?2b912"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Bat</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center">
+                      <span class="mr-2"> 6 </span>
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/BeeFace.png?7220c"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Bee</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-yellow-400"
+                  >
+                    Neutral
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center">
+                      <span class="mr-2"> 10 </span>
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/BlazeFace.png?f7846"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Blaze</td>
+                  <td class="border border-gray-600/30 px-4 py-2 text-red-500">
+                    Hostile
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      20 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 10)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/BoggedFace.png?9054f"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Bogged</td>
+                  <td class="border border-gray-600/30 px-4 py-2 text-red-500">
+                    Hostile
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      16 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 8)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/BreezeFace.png?b2225"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Breeze</td>
+                  <td class="border border-gray-600/30 px-4 py-2 text-red-500">
+                    Hostile
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      30 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 15)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/CamelFace.png?36554"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Camel</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      32 (
+                      <img
+                        src="https://minecraft.wiki/images/Mob_Heart_%28icon%29.png?ddf42"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 16)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/CatFace.png?f4b8c"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Cat</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center">
+                      <span class="mr-2"> 10 </span>
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/CaveSpiderFace.png?10216"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    Cave Spider
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="text-yellow-400">
+                      Neutral
+                      <span class="text-white">
+                        (if light level 12 or above)
+                      </span>
+                    </p>
+                    <p class="text-red-500">
+                      Hostile
+                      <span class="text-white">
+                        (if light level 11 or below)
+                      </span>
+                    </p>
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      12 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 6)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/ChickenFace.png?a6dad"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Chicken</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center">
+                      <span class="mr-2"> 4 </span>
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/CodBody.png?3e0b1"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Cod</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center">
+                      <span class="mr-2"> 3 </span>
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Half_Heart_%28icon%29.png?cb16e"
+                        class="h-3.5 w-3.5"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/CowFace.png?3936a"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Cow</td>
+                  <td
+                    class="border border-gray-600/30 px-4 py-2 text-green-400"
+                  >
+                    Passive
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center">
+                      <span class="mr-2"> 10 </span>
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray-800/40 text-white hover:bg-gray-700/30">
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <img
+                      src="https://minecraft.wiki/images/CreeperFace.png?bd6b1"
+                      alt=""
+                    />
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">Creeper</td>
+                  <td class="border border-gray-600/30 px-4 py-2 text-red-500">
+                    Hostile
+                  </td>
+                  <td class="border border-gray-600/30 px-4 py-2">
+                    <p class="flex items-center gap-2">
+                      20 (
+                      <img
+                        src="https://minecraft.wiki/images/Heart_%28icon%29.png?faf83"
+                        class="h-3.5 w-3.5"
+                      />
+                      x 10)
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="bg-white/30 py-4 text-center text-sm text-gray-700 backdrop-blur-md"
+    >
+      <p>© 2025 IT CMTC, All rights reserved.</p>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/customaudiocontrol.js"></script>
+  </body>
 </html>
