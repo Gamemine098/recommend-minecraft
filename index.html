@@ -11,62 +11,88 @@
       rel="stylesheet"
     />
   </head>
-  <body class="mt-20 bg-gray-800 text-white">
+  <body class="bg-gray-800 text-white">
     <!-- <img src="./waves.svg" alt="" class="fixed -z-10 w-full" /> -->
-    <div class="relative flex min-h-screen items-center justify-center">
-      <div
-        class="mb-20 rounded-3xl bg-white/15 py-10 drop-shadow-lg backdrop-blur-xl sm:py-20 md:py-30 lg:py-40"
-      >
-        <div class="text-center md:mx-32 lg:mx-80">
-          <input
-            disabled
-            type="text"
-            id="randomText2"
-            class="animate__animated animate__fadeInUp animate__faster text-center text-5xl drop-shadow-md"
-          />
-          <p
-            class="animate__animated animate__fadeInUp mt-6 text-3xl text-blue-300 drop-shadow-md"
-          >
-            <b>Name :</b> <span class="text-white">ธนกร มีทรัพย์</span>
-          </p>
-          <p
-            class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
-          >
-            <b>Nickname :</b> <span class="text-white">ไนซ์</span>
-          </p>
-          <p
-            class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
-          >
-            <b>Age :</b> <span class="text-white">18 Years</span>
-          </p>
-          <a href="" target="_blank">
-            <img
-              src="https://images.alphacoders.com/246/thumb-1920-246223.jpg"
-              alt=""
-              class="mt-10 rounded-2xl drop-shadow-2xl"
-              width="1000px"
-            />
-          </a>
+    <div class="relative min-h-screen">
+      <nav class="top-0 left-0 w-full bg-white/30 shadow-md backdrop-blur-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <a href="#" class="text-xl font-bold text-white">My Website</a>
+          <ul class="flex space-x-6">
+            <li>
+              <a href="#" class="text-white hover:text-blue-400">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-blue-400">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-blue-400">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-blue-400">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <p class="fixed bottom-4.5 text-sm text-gray-500">(reload for more)</p>
-      <input
-        disabled
-        type="text"
-        id="randomText1"
-        class="text-md fixed bottom-0 w-3xl text-center drop-shadow-md"
-      />
-      <a
-        href="https://youtu.be/OWR3zMaRKis"
-        class="lol fixed right-1 bottom-0"
-        target="_blank"
-        >Click for some fun :D
-      </a>
-      <audio id="audio" src="./song.mp3" autoplay loop></audio>
-      <button id="toggleButton" class="custom-button fixed top-0 right-0">
-        <i class="fas fa-play"></i>
-      </button>
+      </nav>
+
+      <main class="mt-14 flex items-center justify-center">
+        <div
+          class="mb-20 rounded-3xl bg-white/15 py-20 drop-shadow-lg backdrop-blur-xl"
+        >
+          <div class="text-center md:mx-32 lg:mx-80">
+            <input
+              disabled
+              type="text"
+              id="randomText2"
+              class="animate__animated animate__fadeInUp animate__faster text-center text-5xl font-bold drop-shadow-md"
+            />
+            <p
+              class="animate__animated animate__fadeInUp mt-6 text-3xl text-blue-300 drop-shadow-md"
+            >
+              <b>Name :</b> <span class="text-white">ธนกร มีทรัพย์</span>
+            </p>
+            <p
+              class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
+            >
+              <b>Nickname :</b> <span class="text-white">ไนซ์</span>
+            </p>
+            <p
+              class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
+            >
+              <b>Age :</b> <span class="text-white">18 Years</span>
+            </p>
+            <p
+              class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
+            >
+              <b>Hobby :</b>
+              <span class="text-white">เล่นเกม, เขียนโคด, วาดรูป</span>
+            </p>
+          </div>
+        </div>
+        <p class="fixed bottom-4.5 text-sm text-gray-500">(reload for more)</p>
+        <input
+          disabled
+          type="text"
+          id="randomText1"
+          class="text-md fixed bottom-0 w-3xl text-center drop-shadow-md"
+        />
+        <a
+          href="https://youtu.be/OWR3zMaRKis"
+          class="lol fixed right-1 bottom-0"
+          target="_blank"
+          >Click for some fun :D
+        </a>
+        <audio id="audio" src="./song.mp3" autoplay loop></audio>
+        <button id="toggleButton" class="custom-button fixed top-0 right-0">
+          <i class="fas fa-play"></i>
+        </button>
+      </main>
     </div>
+
+    <footer
+      class="bg-white/30 py-4 text-center text-sm text-gray-700 backdrop-blur-md"
+    >
+      <p>© 2025 All rights reserved.</p>
+    </footer>
 
     <script>
       const audio = document.getElementById("audio");
