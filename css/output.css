@@ -10,7 +10,6 @@
     --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -29,8 +28,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-bold: 700;
@@ -202,9 +199,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
@@ -253,9 +247,6 @@
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -273,9 +264,6 @@
   }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
-  }
-  .mt-20 {
-    margin-top: calc(var(--spacing) * 20);
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -315,6 +303,13 @@
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
+  }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+    }
   }
   .space-x-6 {
     :where(& > :not(:last-child)) {
@@ -402,12 +397,6 @@
   .text-blue-300 {
     color: var(--color-blue-300);
   }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
-  .text-gray-300 {
-    color: var(--color-gray-300);
-  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -484,13 +473,6 @@
       }
     }
   }
-  .hover\:text-blue-300 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-blue-300);
-      }
-    }
-  }
   .hover\:text-blue-400 {
     &:hover {
       @media (hover: hover) {
@@ -529,11 +511,6 @@
       margin-inline: calc(var(--spacing) * 32);
     }
   }
-  .md\:py-20 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 20);
-    }
-  }
   .md\:py-30 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 30);
@@ -544,24 +521,9 @@
       margin-inline: calc(var(--spacing) * 80);
     }
   }
-  .lg\:py-0 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:py-20 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 20);
-    }
-  }
   .lg\:py-30 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 30);
-    }
-  }
-  .lg\:py-40 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 40);
     }
   }
 }

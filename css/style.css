@@ -32,7 +32,7 @@ body {
 }
 
 .lol:hover {
-  cursor: url(./cursor.cur), auto;
+  cursor: url(../etc/cursor.cur), auto;
 }
 
 .custom-button {
