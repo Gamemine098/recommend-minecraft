@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>na man</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mt-20 bg-gray-800 text-white">
+    <!-- <img src="./waves.svg" alt="" class="fixed -z-10 w-full" /> -->
+    <div class="relative flex min-h-screen items-center justify-center">
+      <div
+        class="mb-20 rounded-3xl bg-white/15 py-10 drop-shadow-lg backdrop-blur-xl sm:py-20 md:py-30 lg:py-40"
+      >
+        <div class="text-center md:mx-32 lg:mx-80">
+          <input
+            disabled
+            type="text"
+            id="randomText2"
+            class="animate__animated animate__fadeInUp animate__faster text-center text-5xl drop-shadow-md"
+          />
+          <p
+            class="animate__animated animate__fadeInUp mt-6 text-3xl text-blue-300 drop-shadow-md"
+          >
+            <b>Name :</b> <span class="text-white">ธนกร มีทรัพย์</span>
+          </p>
+          <p
+            class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
+          >
+            <b>Nickname :</b> <span class="text-white">ไนซ์</span>
+          </p>
+          <p
+            class="animate__animated animate__fadeInUp mt-3 text-3xl text-blue-300 drop-shadow-md"
+          >
+            <b>Age :</b> <span class="text-white">18 Years</span>
+          </p>
+          <a href="" target="_blank">
+            <img
+              src="https://images.alphacoders.com/246/thumb-1920-246223.jpg"
+              alt=""
+              class="mt-10 rounded-2xl drop-shadow-2xl"
+              width="1000px"
+            />
+          </a>
+        </div>
+      </div>
+      <p class="fixed bottom-4.5 text-sm text-gray-500">(reload for more)</p>
+      <input
+        disabled
+        type="text"
+        id="randomText1"
+        class="text-md fixed bottom-0 w-3xl text-center drop-shadow-md"
+      />
+      <a
+        href="https://youtu.be/OWR3zMaRKis"
+        class="lol fixed right-1 bottom-0"
+        target="_blank"
+        >Click for some fun :D
+      </a>
+      <audio id="audio" src="./song.mp3" autoplay loop></audio>
+      <button id="toggleButton" class="custom-button fixed top-0 right-0">
+        <i class="fas fa-play"></i>
+      </button>
+    </div>
+
+    <script>
+      const audio = document.getElementById("audio");
+      const toggleButton = document.getElementById("toggleButton");
+
+      toggleButton.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+          toggleButton.innerHTML = '<i class="fas fa-stop"></i>';
+        } else {
+          audio.pause();
+          audio.currentTime = 0; // Reset to the beginning
+          toggleButton.innerHTML = '<i class="fas fa-play"></i>';
+        }
+      });
+
+      // Ensure the icon resets to "play" when the audio ends (even with loop)
+      audio.addEventListener("ended", () => {
+        if (!audio.loop) {
+          toggleButton.innerHTML = '<i class="fas fa-play"></i>';
+        }
+      });
+    </script>
+    <script>
+      var texts = [
+        "lmao",
+        "I'm the honored one",
+        "Nah I'd win",
+        "Pi ja num ja tak",
+        "Mai hai tak",
+        "XD",
+        "我喜欢吃冰淇淋。",
+        "sussy baka",
+        "Nah I'd lose",
+        "那个",
+        "turi ip ip ip",
+        "tung tung tung sahur",
+        "a but ta com",
+        "Lorem ipsum",
+        "nah uh",
+      ];
+
+      document.getElementById("randomText1").value =
+        texts[Math.floor(Math.random() * texts.length)];
+    </script>
+    <script>
+      var texts = ["De kub", "Hello World!", "สวัสดีครับ"];
+
+      document.getElementById("randomText2").value =
+        texts[Math.floor(Math.random() * texts.length)];
+    </script>
+  </body>
+</html>
