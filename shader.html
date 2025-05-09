@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shader</title>
+    <!-- link -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div class="relative min-h-17/18">
+      <!-- nav -->
+      <nav class="top-0 left-0 w-full bg-white/30 shadow-md backdrop-blur-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="./index.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                href="./minecraft.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Minecraft
+              </a>
+            </li>
+            <li>
+              <a
+                href="./mob.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Minecraft Mob
+              </a>
+            </li>
+            <li>
+              <p class="text-xl font-bold text-blue-700 text-shadow-md">
+                Minecraft Shader
+              </p>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center space-x-4">
+            <audio id="audio" src="./aud/minecraft.mp3" autoplay loop></audio>
+            <button id="toggleButton" class="custom-button flex items-center">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main class="mt-14 flex items-center justify-center">
+        <div
+          class="mb-20 rounded-3xl bg-white/25 py-20 drop-shadow-lg backdrop-blur-xl"
+        >
+          <div class="text-center md:mx-32 lg:mx-80">
+            <h1 class="text-5xl font-bold text-shadow-md">Minecraft Shader</h1>
+            <p class="mt-4 text-lg text-shadow-md">
+              แนะนำ Shader ที่นิยม และสวยงามในเกม Minecraft
+            </p>
+            <p class="text-lg text-shadow-md">
+              (การที่จะใช้ Shader ได้, คุณต้องมี
+              <a
+                href="https://optifine.net/home"
+                class="underline"
+                target="_blank"
+              >
+                Optifine
+              </a>
+              หรือ
+              <a
+                href="https://www.irisshaders.dev"
+                class="underline"
+                target="_blank"
+              >
+                Iris Shader
+              </a>
+              เพื่อที่จะสามารถใช้งาน Shader ได้)
+            </p>
+            <br />
+            <div class="text-shadow-md">
+              <p class="mb-3 text-2xl">1. Complementary Shaders</p>
+              <div class="flex justify-between gap-5">
+                <img
+                  src="https://www.complementary.dev/assets/img/newScreenshots/reim4_newIceSpike.jpg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+                <img
+                  src="https://www.complementary.dev/assets/img/newScreenshots/unbound2_vertoakCloud.jpg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+              </div>
+              <p class="text-xl">
+                เป็น Shader ที่ได้รับความเป็นนิยมที่สุดในปี 2025
+              </p>
+              <p class="text-xl">
+                มีสองแบบให้เลือกใช้คือ Reimagined และ Unbound
+              </p>
+              <p class="text-xl">
+                Reimagined
+                โฟกัสกับความสมดุลระหว่างความสวยงามและการแสดงผลคลาสสิกของ
+                Minecraft
+              </p>
+              <p class="text-xl">Unbound โฟกัสกับความสวยงามสมจริงแบบจัดเต็ม</p>
+              <br />
+              <span class="text-xl">
+                Download :
+                <a
+                  href="https://modrinth.com/shader/complementary-reimagined"
+                  class="text-xl text-green-600 underline transition-all duration-300 text-shadow-none hover:text-green-800"
+                  target="_blank"
+                >
+                  Reimagined
+                </a>
+                <a
+                  href="https://modrinth.com/shader/complementary-unbound"
+                  class="ml-2 text-xl text-green-600 underline transition-all duration-300 text-shadow-none hover:text-green-800"
+                  target="_blank"
+                >
+                  Unbound
+                </a>
+              </span>
+            </div>
+
+            <div class="mt-10 text-shadow-md">
+              <p class="mb-3 text-2xl">2. BSL Shader</p>
+              <div class="flex justify-between gap-5">
+                <img
+                  src="https://cdn.modrinth.com/data/Q1vvjJYV/images/593042203d2297676eed851f22c8e2ee3eaab5d6.jpeg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+                <img
+                  src="https://cdn.modrinth.com/data/Q1vvjJYV/images/f9dc692dae4c4c44fcef54a0d921ce83fe7f9800.jpeg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+              </div>
+              <p class="text-xl">
+                เป็นหนึ่งใน Shader ที่ได้รับความนิยมมากที่สุดสำหรับ Minecraft
+              </p>
+              <p class="text-xl">
+                ด้วยจุดเด่นที่ผสมผสานระหว่าง ความงาม, ความลื่นไหล,
+                และการปรับแต่งได้ง่าย
+              </p>
+              <p class="text-xl">
+                ซึ่งเหมาะทั้งกับผู้เล่นทั่วไปและสายถ่ายภาพ / สร้างคอนเทนต์
+              </p>
+
+              <br />
+              <span class="text-xl">
+                Download :
+                <a
+                  href="https://modrinth.com/shader/bsl-shaders"
+                  class="text-xl text-green-600 underline transition-all duration-300 text-shadow-none hover:text-green-800"
+                  target="_blank"
+                >
+                  BSL Shader
+                </a>
+              </span>
+            </div>
+
+            <div class="mt-10 text-shadow-md">
+              <p class="mb-3 text-2xl">3. Sildur's Vibrant shaders</p>
+              <div class="flex justify-between gap-5">
+                <img
+                  src="https://media.forgecdn.net/attachments/405/985/2021-09-22_02.png"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+                <img
+                  src="https://media.forgecdn.net/attachments/405/988/2.png"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+              </div>
+              <p class="text-xl">
+                เป็น Shader pack ที่ได้รับความนิยมอย่างมากใน Minecraft
+                เพราะมีจุดเด่นคือ
+              </p>
+              <p class="text-xl">
+                ความยืดหยุ่นสูง ปรับแต่งได้หลากหลาย
+                และมีหลายระดับความสวยงามให้เลือก
+              </p>
+              <p class="text-xl">
+                จึงเหมาะกับผู้เล่นทุกระดับ ไม่ว่าจะใช้คอมแรงหรือคอมระดับกลาง
+              </p>
+
+              <br />
+              <span class="text-xl">
+                Download :
+                <a
+                  href="https://www.curseforge.com/minecraft/shaders/sildurs-vibrant-shaders"
+                  class="text-xl text-orange-400 underline transition-all duration-300 text-shadow-none hover:text-orange-600"
+                  target="_blank"
+                >
+                  Sildur's Vibrant shaders
+                </a>
+              </span>
+            </div>
+
+            <div class="mt-10 text-shadow-md">
+              <p class="mb-3 text-2xl">4. SEUS Shader</p>
+              <div class="flex justify-between gap-5">
+                <img
+                  src="https://www.sonicether.com/wp-content/uploads/2020/02/2017-11-30_20.45.50-1.jpg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+                <img
+                  src="https://www.sonicether.com/wp-content/uploads/2020/02/ptgi2-1.jpg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+              </div>
+              <p class="text-xl">
+                เป็นหนึ่งใน Shader ที่โด่งดังที่สุดในวงการ Minecraft
+                ด้วยคุณภาพระดับสูงและภาพที่สมจริงมาก
+              </p>
+              <p class="text-xl">
+                โดยมี 2 รุ่นหลักที่นิยม ได้แก่ SEUS Renewed และ SEUS PTGI
+              </p>
+              <p class="text-xl">
+                Renewed จุดเด่นคือแสงเงาสมจริงแบบธรรมชาติ สีสันกลมกล่อม ดูอบอุ่น
+                ไม่ฉูดฉาด
+              </p>
+              <p class="text-xl">
+                PTGI จุดเด่นใช้เทคนิค Path Tracing (คล้าย Ray Tracing)
+                เพื่อให้แสงและเงา "สมจริงสุด ๆ"
+              </p>
+              <br />
+              <span class="text-xl">
+                Download :
+                <a
+                  href="https://www.sonicether.com/seus/"
+                  class="text-xl text-red-400 underline transition-all duration-300 text-shadow-none hover:text-red-600"
+                  target="_blank"
+                >
+                  SEUS Shader
+                </a>
+              </span>
+            </div>
+
+            <div class="mt-10 text-shadow-md">
+              <p class="mb-3 text-2xl">5. MakeUp - Ultra Fast</p>
+              <div class="flex justify-between gap-5">
+                <img
+                  src="https://cdn.modrinth.com/data/izsIPI7a/images/bdd03d7b879fe8c030062f8e9d3d46eead3e5c25.jpeg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+                <img
+                  src="https://cdn.modrinth.com/data/izsIPI7a/images/5c96400a08199f20495df2a7293527bc0eab12b8.jpeg"
+                  alt=""
+                  class="mx-auto mb-10 flex h-72 rounded-lg drop-shadow-2xl"
+                />
+              </div>
+              <p class="text-xl">
+                ออกแบบมาเพื่อให้การเล่นเกมมีภาพสวยงามขึ้น
+                พร้อมกับการปรับประสิทธิภาพที่ดีเยี่ยม
+              </p>
+              <p class="text-xl">
+                โดยเฉพาะสำหรับผู้เล่นที่ต้องการใช้งาน Shader
+                แต่ไม่อยากให้เกมช้าลงหรือใช้ทรัพยากรเครื่องมากเกินไป
+              </p>
+              <p class="text-xl">
+                เป็น Shader ที่เบา
+                และออกแบบมาให้สามารถใช้งานได้แม้ในเครื่องที่มีสเปคต่ำถึงกลาง
+                โดยยังคงให้ภาพที่ดูดี ปรับแต่งได้ง่าย
+              </p>
+              <p class="text-xl">
+                เพื่อให้เหมาะกับความสามารถของเครื่อง เฟรมเรตสูง
+                ไม่กระทบการเล่นเกมในระดับที่ชัดเจน
+              </p>
+              <br />
+              <span class="text-xl">
+                Download :
+                <a
+                  href="https://www.sonicether.com/seus/"
+                  class="text-xl text-green-600 underline transition-all duration-300 text-shadow-none hover:text-green-800"
+                  target="_blank"
+                >
+                  Make Up - Ultra Fast
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="bg-white/30 py-4 text-center text-sm text-gray-700 backdrop-blur-md"
+    >
+      <p>© 2025 IT CMTC, All rights reserved.</p>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/customaudiocontrol.js"></script>
+  </body>
+</html>
