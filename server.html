@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server</title>
+    <!-- link -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div class="relative min-h-17/18">
+      <!-- nav -->
+      <nav class="top-0 left-0 w-full bg-white/30 shadow-md backdrop-blur-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="./about.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                href="./minecraft.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Minecraft
+              </a>
+            </li>
+            <li>
+              <a
+                href="./mob.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Minecraft Mob
+              </a>
+            </li>
+            <li>
+              <a
+                href="./shader.html"
+                class="text-xl text-white transition-all duration-300 text-shadow-md hover:text-blue-300"
+              >
+                Minecraft Shader
+              </a>
+            </li>
+            <li>
+              <p class="text-xl font-bold text-blue-700 text-shadow-md">
+                Minecraft Server
+              </p>
+            </li>
+          </ul>
+          <div class="flex items-center space-x-4">
+            <audio id="audio" src="./aud/song.mp3" autoplay loop></audio>
+            <button id="toggleButton" class="custom-button flex items-center">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main class="mt-14 flex items-center justify-center">
+        <div
+          class="mb-20 rounded-3xl bg-white/25 py-20 drop-shadow-lg backdrop-blur-xl"
+        >
+          <div class="text-center md:mx-32 lg:mx-80">
+            <h1 class="text-5xl font-bold text-shadow-md">Minecraft Server</h1>
+            <p class="mt-4 text-lg text-shadow-md">
+              แนะนำเซิร์ฟเวอร์ Minecraft ที่น่าเล่น
+            </p>
+            <br />
+            <div class="text-shadow-md">
+              <p class="mb-3 text-2xl">1. Hypixel</p>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/it/0/09/Hypixel.png"
+                alt=""
+                class="mx-auto mb-10 flex h-80 rounded-lg drop-shadow-2xl"
+              />
+              <p class="text-lg">IP: mc.hypixel.net</p>
+              <p class="text-lg">
+                Website:
+                <a
+                  href="https://hypixel.net"
+                  target="_blank"
+                  class="text-blue-500 underline transition duration-300 hover:text-blue-700"
+                >
+                  https://hypixel.net
+                </a>
+              </p>
+              <p class="text-lg">
+                โหมดเกมยอดนิยมบน Hypixel: SkyBlock, Bed Wars, SkyWars, Murder
+                Mystery
+              </p>
+              <p class="text-lg">แพลตฟอร์ม: Minecraft Java Edition</p>
+              <p class="text-lg">เวอร์ชั่น: 1.8.9 and higher</p>
+            </div>
+
+            <div class="mt-10 text-shadow-md">
+              <p class="mb-3 text-2xl">2. Wynncraft</p>
+              <img
+                src="https://media.mmorpg.com/images/heroes/posts/129178.jpg"
+                alt=""
+                class="mx-auto mb-10 flex h-80 rounded-lg drop-shadow-2xl"
+              />
+              <p class="text-lg">IP: play.wynncraft.com</p>
+              <p class="text-lg">
+                Website:
+                <a
+                  href="https://wynncraft.com"
+                  class="text-blue-500 underline transition duration-300 hover:text-blue-700"
+                  target="_blank"
+                >
+                  https://wynncraft.com
+                </a>
+              </p>
+              <p class="text-lg">ประเภทเกม: MMORPG</p>
+              <p class="text-lg">แพลตฟอร์ม: Minecraft Java Edition</p>
+              <p class="text-lg">เวอร์ชั่น: 1.20.5 and higher</p>
+            </div>
+
+            <div class="mt-10 text-shadow-md">
+              <p class="mb-3 text-2xl">3. The Hive</p>
+              <img
+                src="https://playhive.com/content/images/2024/10/2024-10-11-17-34-46.png"
+                alt=""
+                class="mx-auto mb-10 flex h-80 rounded-lg drop-shadow-2xl"
+              />
+              <p class="text-lg">
+                IP: geo.hivebedrock.network (หรือผ่าน Featured Servers)
+              </p>
+              <p class="text-lg">
+                Website:
+                <a
+                  href="https://playhive.com"
+                  class="text-blue-500 underline transition duration-300 hover:text-blue-700"
+                  target="_blank"
+                >
+                  https://playhive.com
+                </a>
+              </p>
+              <p class="text-lg">ประเภทเกม: Minigame</p>
+              <p class="text-lg">แพลตฟอร์ม: Minecraft Bedrock Edition</p>
+              <p class="text-lg">เวอร์ชั่น: 1.21.50 - 1.21.80</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="bg-white/30 py-4 text-center text-sm text-gray-700 backdrop-blur-md"
+    >
+      <p>
+        © 2025 IT CMTC, All rights reserved. |
+        <a
+          href="https://github.com/Gamemine098/recommend-minecraft"
+          target="_blank"
+          class="text-blue-500 underline transition duration-300 hover:text-blue-700"
+        >
+          Repositories
+        </a>
+      </p>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/customaudiocontrol.js"></script>
+  </body>
+</html>
